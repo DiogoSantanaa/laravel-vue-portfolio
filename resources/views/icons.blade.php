@@ -9,7 +9,7 @@
      <div id="socials">
         <ul>
             <li>
-                <a href="mailto:diogosantana1997@outlook.pt?subject=E-mail site" title="Enviar e-mail">
+                <a href="#Contact" title="Enviar e-mail">
                     <i class="fas fa-envelope"></i>
                 </a>
             </li>

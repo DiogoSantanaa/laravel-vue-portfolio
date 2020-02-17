@@ -3,9 +3,9 @@
     <div class="contailer-fluid">
       <div class="row ">
         <div class="col-lg-4 col-md-4 col-margin text-center">
+          <i class="fas fa-long-arrow-alt-right"></i>
           <a href="images/CV.pdf" title="download cv" download>
             <span class="footer-cv">
-              <i class="fas fa-long-arrow-alt-right"></i>
               <span class="fontowesome-padding">curriculum vitae</span>
             </span>
           </a>

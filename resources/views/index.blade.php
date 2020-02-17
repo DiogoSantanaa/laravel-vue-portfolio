@@ -17,8 +17,8 @@
             <!-- Fonts -->
             <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,800&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-            <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
+            <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+            
              
 
             <!-- Boostrap -->
