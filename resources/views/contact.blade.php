@@ -48,7 +48,7 @@
                 @enderror
             </div>
             <div class="form-group">
-                <textarea name="message" id="message" placeholder="Message :" rows="10" class="form-control" >{{ old('message') }}</textarea>
+                <textarea name="message" id="message" placeholder="Message :" style="height: 171px;" class="form-control" >{{ old('message') }}</textarea>
                 @error('message')
                     <span class="errorMessage">Minimum 50 characaters required</span>
                 @enderror

@@ -426,7 +426,6 @@ h3 .waves svg {
 /* End of About me  */
 
 /* Icons */
-
 #icons {
     position: fixed !important;
     z-index: 1;
@@ -507,7 +506,7 @@ h3 .waves svg {
 /* Header */
 section.bg {
     height: 100%;
-    background: linear-gradient(155deg, $red 51%, transparent 49%);
+    background: linear-gradient(155deg, $red 50%, transparent 50%);
 }
 @media (min-width: 767px) {
     section.bg {
@@ -1038,6 +1037,13 @@ ul.a {
     padding: 0px 0px 0px;
     border-width: 0px;
 }
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 100vw;
+        margin: 0px 0px !important;
+    }
+}
+
 /* End of Portfolio  */
 
 /* Contact */
