@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', 'ContactController@show');
+Route::get('/', 'ContactController@index');
 Route::post('/', 'ContactController@store');
 
 Auth::routes();

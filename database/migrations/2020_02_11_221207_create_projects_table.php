@@ -21,7 +21,9 @@ class CreateProjectsTable extends Migration
             $table->text('body');
             $table->string('link');
             $table->string('github');
-            $table->json('technologies');
+            $table->unsignedBigInteger('technologie_id');
+            $table->unsignedBigInteger('technologie_js_id');
+            $table->unsignedBigInteger('technologie_css_id');
             $table->string('thumbnail');
             $table->string('gif');
             $table->timestamps();

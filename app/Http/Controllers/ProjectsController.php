@@ -18,6 +18,10 @@ class ProjectsController extends Controller
      */
     public function index()
     {
+        // Get all the information that projects has
+         $projects = \App\Project::all();
+         dd($projects);
+
         return view('projects.index');
     }
 }

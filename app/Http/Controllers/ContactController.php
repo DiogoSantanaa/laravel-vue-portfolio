@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Project;
 use App\Mail\ContactMe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-    public function show()
+    public function index()
     {
-        return view('index');
+        $projects = Project::latest()->get();
+
+        return view('index', ['projects' => $projects]);
     }
 
     public function store()
@@ -34,4 +37,3 @@ class ContactController extends Controller
         return redirect('/#Contact')->with('message', 'Your email was successfully sent!');
     }
 }
- 
