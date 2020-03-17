@@ -44,12 +44,13 @@
                 </button>
               </div>
           </div> 
-          <div class="modal fade"  id="modal{{ $project->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+          <div class="modal fade"  id="modal{{ $project->id }}" tabindex="-1" role="dialog" aria-hidden="true" >
             <div class="modal-dialog" role="document">
-            <div class="container-fluid modal-fluid ">
+              <div class="modal-content">
+            <div class="container-fluid modal-fluid">
               <div class="row">
-                <div type="button" class="col-lg-12 text-right" data-dismiss="modal" aria-label="Close">
-                  <i class="icon close">
+                <div class="col-lg-12 text-right" >
+                  <button type="button" class="icon close"  data-dismiss="modal" aria-label="Close">
                     <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve">
                       <style type="text/css">
                         .st1{fill:none;stroke:#707070;stroke-width:2;stroke-miterlimit:10;}
@@ -57,7 +58,7 @@
                       <line class="st1" x1="2.2" y1="2.2" x2="47.48" y2="47.48"></line>
                       <line class="st1" x1="2.2" y1="47.48" x2="47.48" y2="2.2"></line>
                     </svg>
-                  </i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -96,9 +97,11 @@
                     <span class="modal-technologies-bar">/ </span>{{ $project->technologiesJs->name }}
                   </li>
                 </ul>
-                <button class="btn-demo" target="_blank" href="{{ $project->link }}" >Live Demo</button>
+                <a href="{{ $project->link }}" role="button" class="btn-demo" target="_blank" >Live Demo</a>
+                {{-- <button href="{{ $project->link }}" class="btn-demo" target="_blank"  >Live Demo</button> --}}
                 <br>
-                <button class="btn-github" target="_blank" href="{{ $project->github }}" >GitHub Repo</button>
+                <a href="{{ $project->github }}" role="button" class="btn-github" target="_blank" >GitHub Repo</a>
+                {{-- <button class="btn-github" target="_blank" href="{{ $project->github }}" >GitHub Repo</button> --}}
               </div>
               <div class="col-lg-12 text-center">
                 <div class="img-modal-margin">
@@ -107,6 +110,7 @@
               </div>
             </div>    
           </div>
+        </div>
         </div>
       </div>
       @empty

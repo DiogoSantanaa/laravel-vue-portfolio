@@ -1,5 +1,5 @@
 <header id="Home">
-    <section class="bg">
+    <section class="bg text-focus-in">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12  text-center">
